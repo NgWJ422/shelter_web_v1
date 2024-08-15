@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>KidoCode shelter webpaage</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/logo/kidocode_icon.png" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .carousel-item {
+                transition: transform 0.5s ease, opacity 0.5s ease;
+            }
+          
+            .card {
+                margin: 0 15px;
+            }
+          
+            .carousel-inner {
+                padding: 0 15px;
+            }
+            /* Styling for the Previous button */
+            .carousel-control-prev {
+                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+                border-radius: 50%; /* Rounded button */
+                width: 50px; /* Width of the button */
+                height: 50px; /* Height of the button */
+                top: 50%; /* Positioning */
+                transform: translateY(-50%);
+            }
+
+            /* Styling for the Next button */
+            .carousel-control-next {
+                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+                border-radius: 50%; /* Rounded button */
+                width: 50px; /* Width of the button */
+                height: 50px; /* Height of the button */
+                top: 50%; /* Positioning */
+                transform: translateY(-50%);
+            }
+
+            /* Customizing the arrow icons */
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                filter: invert(1); /* Inverts the color to white */
+                width: 20px; /* Adjust size of the icon */
+                height: 20px; /* Adjust size of the icon */
+            }
+
+            /* Optional: Adding a shadow for a 3D effect */
+            .carousel-control-prev, .carousel-control-next {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            /* Optional: Hover effect */
+            .carousel-control-prev:hover, .carousel-control-next:hover {
+                background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            }
+            /* Adjust the position of the carousel indicators */
+            .carousel-indicators {
+                position: absolute;
+                bottom: 2%;
+                z-index: 15; /* Ensure they are above other elements */
+                display: flex;
+                justify-content: center;
+                padding-left: 0;
+                margin-right: 15%;
+                margin-left: 15%;
+                list-style: none;
+            }
+          </style>
+          
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand fw-bolder" href="#page-top"><img src="assets/logo/kidocode_icon.png" class="me-2" height="30px">KidoCode</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#slider">Slider</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">KidoCode</h1>
+                        <hr class="text-secondary"/>
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!--slider-->
+        <section id="slider" class=" py-3 bg-primary">
+            <div class="container">
+                <div class="text-center text-white">
+                    <h2 class="h2">
+                        Activities/Sliders
+                    </h2>
+                    <hr class="border border-white border-3 opacity-75">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ad, voluptatum dolores similique et odio magnam unde, recusandae nam quisquam ut nulla facilis, quam perspiciatis! Iste tempore cupiditate nemo et.</p>
+                </div>
+                <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators (optional) -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                
+                    <!-- Carousel Items -->
+                    <div class="carousel-inner">
+                        <!-- First Slide (3 Cards) -->
+                        <div class="carousel-item active">
+                            <div class="row justify-content-around">
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 90%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card Title 1</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 90%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card Title 2</h5>
+                                            <p class="card-text">Some more quick example text.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 90%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card Title 3</h5>
+                                            <p class="card-text">Even more quick example text.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Second Slide (3 Cards) -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-around">
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 90%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card Title 4</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 90%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card Title 5</h5>
+                                            <p class="card-text">Some more quick example text.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 90%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card Title 6</h5>
+                                            <p class="card-text">Even more quick example text.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Services-->
+        <section class="page-section bg-pr" id="services">
+            <div class="container px-3 px-lg-4">
+                <h2 class="text-center mt-0">At Your Service</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-blue"></i></div>
+                            <h3 class="h4 mb-2">Sturdy Themes</h3>
+                            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Up to Date</h3>
+                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Ready to Publish</h3>
+                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Made with Love</h3>
+                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Partners-->
+        <section id="partners" class="py-5 bg-primary">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Partners</h2>
+                    <hr class="border border-white border-3 opacity-75">
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-sm-5 col-lg-3 mb-3 card" style="width: 18rem;">
+                        <img src="assets/logo/unclecode.png" class="card-img-top" alt="unclecode">
+                        <div class="card-body">
+                          <h5 class="card-title">UNCLECODE</h5>
+                          <p class="card-text">Founder, CEO. Hossein, or Unclecode as he prefers, is a Computer Science expert specializing in Natural Language Processing, Data Science, and AI.</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-5 col-lg-3 mb-3 card" style="width: 18rem;">
+                        <img src="assets/logo/masyam.png" class="card-img-top" alt="unclecode">
+                        <div class="card-body">
+                          <h5 class="card-title">Maysam</h5>
+                          <p class="card-text">Co-Founder, COO. Maysam is an expert in the field of Molecular Biology specializing in drug discovery for cancer and bioinformatics.</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3 mb-3 card" style="width: 18rem;">
+                        <img src="assets/logo/Arash.png" class="card-img-top" alt="unclecode">
+                        <div class="card-body">
+                          <h5 class="card-title">Arash</h5>
+                          <p class="card-text">VP of Technology. Arash is experienced in leading the entire development process of Kidocode's new products, projects, and programs.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Google Forms Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="border border-secondary border-3 opacity-75">
+                        <p class="text-muted mb-5">Any more questions? Send us a messages and we will get back to you as soon as possible!</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div id="Googleform" >
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2suNQqk7VzPcKAOGjp5yoI6zcr37LX9vOVaJi3HUVqOQFIA/viewform?embedded=true" 
+                                    style="width: 100%; height: 736px; border: none;" 
+                                    frameborder="0" 
+                                    marginheight="0" 
+                                    marginwidth="0">
+                                Loading…
+                            </iframe>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">KidoCode Charity Website by Ng Wei Jie</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
