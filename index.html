@@ -56,6 +56,24 @@
         width: 100%;
       }
 
+            /* Optional: Hover effect */
+            .carousel-control-prev:hover, .carousel-control-next:hover {
+                background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            }
+            /* Adjust the position of the carousel indicators */
+            .carousel-indicators {
+                position: absolute;
+                bottom: 2%;
+                z-index: 15; /* Ensure they are above other elements */
+                display: flex;
+                justify-content: center;
+                padding-left: 0;
+                margin-right: 15%;
+                margin-left: 15%;
+                list-style: none;
+            }
+
       #Googleform {
         text-align: center;
       }
@@ -179,19 +197,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#activities">Activities</a>
+              <a class="nav-link" href="index.html#activities">Activities</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="index.html#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="index.html#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#partners">Partners</a>
+              <a class="nav-link" href="index.html#partners">Partners</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Us</a>
+              <a class="nav-link" href="index.html#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQs</a>
             </li>
           </ul>
         </div>

@@ -7,6 +7,25 @@
 // Scripts
 // 
 
+document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('[data-toggle="collapse"]');
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var target = document.querySelector(this.getAttribute('data-target'));
+            var icon = this.closest('.card-header').querySelector('.rotate-icon');
+
+            // Reset all icons and then rotate the current one
+            document.querySelectorAll('.rotate-icon').forEach(function (ic) {
+                ic.classList.remove('rotate');
+            });
+
+            if (!target.classList.contains('show')) {
+                icon.classList.add('rotate');
+            }
+        });
+    });
+});
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>KidoCode shelter webpaage</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/logo/kidocode_icon.png" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .collapse {
+            transition: height 0.35s ease;
+            overflow: hidden;
+            /* Ensures smooth transition */
+        }
+
+        .collapse.show {
+            height: auto;
+            /* Expands to fit content */
+        }
+
+        .rotate-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bolder" href="#page-top"><img src="assets/logo/kidocode_icon.png" class="me-2"
+                    height="30px" alt="kidohelp">KidoCode</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#slider">Slider</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#partners">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">KidoCode</h1>
+                    <hr class="text-secondary" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Start Bootstrap can help you build better websites using the Bootstrap
+                        framework! Just download a theme and start customizing, no strings attached!</p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                    <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse-1"
+                            aria-expanded="true" aria-controls="faqCollapse-1">
+                            What is Donately?
+                        </button>
+                        <button title="btn" class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#faqCollapse-1" aria-expanded="false" aria-controls="faqCollapse-1">
+                            <i class="fas fa-chevron-down rotate-icon" data-target="#faqCollapse-1"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="faqCollapse-1" class="collapse show" aria-labelledby="faqHeading-1"
+                    data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Donately is a platform that helps organizations raise funds online easily and efficiently.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="card">
+                <div class="card-header" id="faqHeading-2">
+                    <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#faqCollapse-2" aria-expanded="false" aria-controls="faqCollapse-2">
+                            How do I donate?
+                        </button>
+                        <button title="btn" class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#faqCollapse-2" aria-expanded="false" aria-controls="faqCollapse-2">
+                            <i class="fas fa-chevron-down rotate-icon" data-target="#faqCollapse-2"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        You can donate by clicking on the "Donate" button and following the on-screen instructions.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="card">
+                <div class="card-header" id="faqHeading-3">
+                    <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#faqCollapse-3" aria-expanded="false" aria-controls="faqCollapse-3">
+                            What payment methods are accepted?
+                        </button>
+                        <button title="btn" class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#faqCollapse-3" aria-expanded="false" aria-controls="faqCollapse-3">
+                            <i class="fas fa-chevron-down rotate-icon" data-target="#faqCollapse-3"></i>
+                        </button>
+
+                    </h5>
+                </div>
+                <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        We accept various payment methods including credit/debit cards, PayPal, and more.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center my-5">
+            <h3>Have any more questions?</h3>
+            <p>If you have additional questions, feel free to reach out to us!</p>
+            <a href="mailto:contact@example.com" class="btn btn-primary">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">KidoCode Charity Website by Ng Wei Jie</div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
