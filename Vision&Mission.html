@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>KidoHelp</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/kidocode_icon.png" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--SwiperJS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            /* Ensure the image covers the area */
+        }
+
+        .carousel-item img {
+            width: 100%;
+            /* Ensure the image covers the container */
+            height: 400px;
+            /* Set the desired height */
+            object-fit: cover;
+            /* Ensure the image maintains its aspect ratio */
+        }
+
+        .custom-container {
+            max-width: 800px;
+            margin: 0 auto;
+            /* Center the container */
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 400px;
+            height: 200px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+
+        /* Optional: Hover effect */
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            /* Darker background on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Adjust the position of the carousel indicators */
+        .carousel-indicators {
+            position: absolute;
+            bottom: 2%;
+            z-index: 15;
+            /* Ensure they are above other elements */
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+            margin-right: 15%;
+            margin-left: 15%;
+            list-style: none;
+        }
+
+        #Googleform {
+            text-align: center;
+        }
+
+        .content-container {
+            width: 100%;
+            padding: 0 15px;
+            /* Optional: Adds some padding on the sides */
+        }
+
+        .content-container h2,
+        .content-container p {
+            width: 100%;
+            text-align: center;
+            /* Adjust text alignment as needed */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .page-section {
+            padding: 4rem 0;
+        }
+
+        .contact-container {
+            background: linear-gradient(#ffdad5, #fff7f9);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .contact-left {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .contact-left-title h2 {
+            font-weight: 600;
+            color: #a363aa;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .contact-left-title hr {
+            border: none;
+            width: 120px;
+            height: 5px;
+            background-color: #a363aa;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-inputs {
+            width: 400px;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            color: #666;
+            border-radius: 50px;
+        }
+
+        .contact-left textarea {
+            height: 140px;
+            padding-top: 15px;
+            border-radius: 20px;
+        }
+
+        .contact-inputs:focus {
+            border: 2px solid #ff994f;
+        }
+
+        .contact-inputs::placeholder {
+            color: #a9a9a9;
+        }
+
+        .contact-left button {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(270deg, #ff994f, #fa6d86);
+            cursor: pointer;
+        }
+
+        .contact-left button img {
+            height: 15px;
+        }
+
+        .contact-right img {
+            width: 500px;
+        }
+
+        @media (max-width:800px) {
+            .contact-inputs {
+                width: 80vw;
+            }
+
+            .contact-right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/kidocode_icon.png" class="me-2"
+                    height="30px" alt="kidohelp">KidoHelp</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Vision&Mission.html">Vision&Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#partners">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">KidoHelp</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">
+                        We believe every child deserves a chance to thrive. By providing
+                        free transportation, we open doors to education and enrichment for
+                        kids in need. Join us in driving toward a brighter, more inclusive
+                        future.
+                    </p>
+                    <a class="btn btn-primary btn-xl" href="#vision">Scroll down for knowing our goals</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr style="border: 5px solid red; width: 100%; margin: 0 auto;" />
+    <!--Vision-->
+    <section class="page-section bg-primary" id="vision">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="text-white mt-0">Our Vision</h2>
+              <hr class="divider divider-light" />
+              <p class="text-white-60 mb-4">
+                To create a world where every child is empowered, protected, and given the opportunity to thrive, free from poverty, abuse, and inequality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr style="border: 5px solid red; width: 100%; margin: 0 auto;" />
+    <!--Misssion-->
+    <section class="page-section bg-secondary" id="mission">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="text-white mt-0">Our Mission</h2>
+              <hr class="divider divider-light" />
+              <p class="text-white-65">Our mission is driven by a commitment to: </p>
+              <ol class="text-white-65 mb-4 text-start">
+                <li>To provide vulnerable children with the support they need to overcome challenges.</li>
+                <li>To offer resources that empower children to achieve their potential.</li>
+                <li>To create opportunities that help children build brighter futures.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr style="border: 5px solid red; width: 100%; margin: 0 auto;" />
+      <!--Plans-->
+      <section class="page-section bg-dark" id="plans">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="text-white mt-0">Our Plans</h2>
+              <hr class="divider divider-light" />
+              <ol class="text-white-75 mb-4 text-start">
+                <li>Expand our transportation services to reach more children in need.</li>
+                <li>Collaborate with local schools and communities to identify and support vulnerable children.</li>
+                <li>Increase fundraising efforts to sustain and grow our programs.</li>
+              </ol>
+              <p class="text-white-75">Our plans focus on building sustainable and impactful solutions for children's well-being.</p>
+              <br>
+            </section>
+            <hr style="border: 5px solid red; width: 100%; margin: 0 auto;" />
+            <section id="Join-Us"><br><br><br><br>
+              <h2 style="color:orange">Want to join us?</h2>
+              <br>
+              <a class="btn btn-light btn-xl" href="index.html#contact">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="small text-center text-muted">
+                    Copyright &copy; 2023 - Company Name
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 150,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+    </body>
+    
+    </html>

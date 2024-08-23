@@ -10839,8 +10839,25 @@ body {
   padding: 8rem 0;
 }
 
+.text-white-60 {
+  color: black !important;
+  text-align: center;
+}
+
+.text-white-65 {
+  color: black !important;
+  text-align: center;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
+  text-align: left;
+}
+
+#Join-Us{
+  background-color: cyan;
+  text-align: center;
+  height: 300px;
 }
 
 .btn-xl {
