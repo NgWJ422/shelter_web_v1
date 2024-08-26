@@ -5,26 +5,36 @@
 */
 //
 // Scripts
-// 
+//
 
-document.addEventListener('DOMContentLoaded', function () {
-    var buttons = document.querySelectorAll('[data-toggle="collapse"]');
-    buttons.forEach(function (button) {
-        button.addEventListener('click', function () {
-            var target = document.querySelector(this.getAttribute('data-target'));
-            var icon = this.closest('.card-header').querySelector('.rotate-icon');
+const questionWrappers = document.querySelectorAll('.q-wrapper');
 
-            // Reset all icons and then rotate the current one
-            document.querySelectorAll('.rotate-icon').forEach(function (ic) {
-                ic.classList.remove('rotate');
-            });
-
-            if (!target.classList.contains('show')) {
-                icon.classList.add('rotate');
-            }
-        });
-    });
+questionWrappers.forEach((wrapper) => {
+  wrapper.addEventListener('click', showAnswer);
+  wrapper.addEventListener('keydown', (e) => {
+    if (e.key == 'Enter') {
+      showAnswer(e);
+    }
+  });
 });
+
+function showAnswer(e) {
+  questionWrappers.forEach((wrapper) => {
+    const h3 = wrapper.querySelector('h3');
+    const svg = wrapper.querySelector('svg');
+    const answer = wrapper.nextElementSibling;
+
+    if (wrapper == e.currentTarget) {
+      h3.classList.toggle('h3-active');
+      svg.classList.toggle('svg-animation');
+      answer.classList.toggle('p-visible');
+    } else {
+      h3.classList.remove('h3-active');
+      svg.classList.remove('svg-animation');
+      answer.classList.remove('p-visible');
+    }
+  });
+}
 
 window.addEventListener('DOMContentLoaded', event => {
 
